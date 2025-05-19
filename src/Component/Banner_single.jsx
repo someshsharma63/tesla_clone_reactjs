@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Banner_single({imagedata,para,head,btnone,btntwo,downarrow}) {
+function Banner_single({ imagedata, para, head, btnone, btntwo, downarrow }) {
   return (
     <div
       className="banner"
@@ -15,20 +15,28 @@ function Banner_single({imagedata,para,head,btnone,btntwo,downarrow}) {
         alignItems: 'center',
       }}
     >
-        <div className='content'>
-               <h1>{head}</h1>
-               <p>{para}</p>
-      <div className="button-group" style={{ display: 'flex', gap: '10px', marginTop: '20px' }}>
-        <button>{btnone}</button>
-        {btntwo && <button>{btntwo}</button>}
-        <div className='downarrow'>
-        <img src={downarrow} alt="" />
 
+
+
+
+      <div className='content'>
+        <div className='banner_data'>
+          <h1>{head}</h1>
+          <p>{para}</p>
+        </div>
+
+        <div className="button-group" >
+          <button>{btnone}</button>
+          {btntwo && <button>{btntwo}</button>}
+          <div className='downarrow'>
+            <img src={downarrow} alt="" />
+
+          </div>
         </div>
       </div>
-        </div>
-   
     </div>
+
+
   )
 }
 
