@@ -120,15 +120,16 @@ header {
 }
 .sidemenu {
   position: fixed;
-  right: -250px;
-  height: 100vh;
-  background-color: #fff;
-  width: 250px;
   top: 0;
-  z-index: 10;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: white;
+  transition: right 0.3s ease;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   list-style: none;
-  padding: 2rem 3rem;
-  transition: right 300ms ease;
+  z-index: 1000;
 }
 
 .sidemenu li {
